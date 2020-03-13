@@ -16,8 +16,15 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'firstname','avatar' ,'name', 'email', 'password',
     ];
+
+    public function getAvatar() {
+        if (!$this->avatar) {
+                    return '/img/avatar-vide.png';
+                }
+                return $this->avatar;
+        }
 
     /**
      * The attributes that should be hidden for arrays.
@@ -36,4 +43,5 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
 }
