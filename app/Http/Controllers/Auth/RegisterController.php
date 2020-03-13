@@ -48,7 +48,6 @@ class RegisterController extends Controller
      * @return \Illuminate\Contracts\Validation\Validator
      */
 
-    use Intervention\Image\Facades\Image;
 
     protected function validator(array $data)
     {

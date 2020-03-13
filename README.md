@@ -37,8 +37,16 @@ npm install && npm run dev
 -> Initialiser notre projet, commit et push
 -> Remplir un Readme pour se mémoriser les étapes du devoir si je refais
 
+    c.bis Comment ajouter 2 Repo(autre que master, notre github)
+-> Terminal > git remote add nomDu2emeRepo https://adresseDuRepo.com/nomDuRepo.git
+-> Terminal > git push nomDu2emeRepo (Là je push sur mon 2eme repo que j'ai appeler nomDu2emeRepo)
+
+
+
 
 <hr>
+
+
 
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>

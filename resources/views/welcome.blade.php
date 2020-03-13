@@ -7,17 +7,23 @@
         <title>Facebouk</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
         <!-- Styles -->
         <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                width: 100%;
+                background: url(../img/bg.jpg)no-repeat;
+                background-position: center;
+                background: cover;
+                background-size: 100%;
+                color: white;
             }
 
             .full-height {
@@ -45,7 +51,7 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 124px;
             }
 
             .links > a {
@@ -58,9 +64,7 @@
                 text-transform: uppercase;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
+            .text-left { text-align: left!important; }
         </style>
     </head>
     <body>
@@ -68,23 +72,25 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}" style="color:white;">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}" style="color:white;">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}" style="color:white;">Register</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title">
                     Facebouk
                 </div>
+                <h3 class="text-left">Discover the new social network</h3>
+                <p class="text-left">Try it for free and share all your life and<br> give us your personal data for business purposes.</p>
 
-                <div class="links">
+                <!-- <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
@@ -93,7 +99,7 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </body>
