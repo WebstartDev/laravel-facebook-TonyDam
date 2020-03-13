@@ -39,6 +39,7 @@ npm install && npm run dev
 
     c.bis Comment ajouter 2 Repo(autre que master, notre github)
 -> Terminal > git remote add nomDu2emeRepo https://adresseDuRepo.com/nomDuRepo.git
+-> Terminal > git init > git add . > git commit -m "message du commit" > 
 -> Terminal > git push nomDu2emeRepo (Là je push sur mon 2eme repo que j'ai appeler nomDu2emeRepo)
 
 
