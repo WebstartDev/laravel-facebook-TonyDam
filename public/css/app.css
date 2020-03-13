@@ -78,6 +78,7 @@ body {
   background-position: center;
   background: cover;
   background-size: 100%;
+  letter-spacing: .1rem;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
